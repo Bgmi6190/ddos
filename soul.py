@@ -103,7 +103,7 @@ def list_approved(update: Update, context: CallbackContext) -> None:
 def attack(update: Update, context: CallbackContext) -> None:
     user_id = update.effective_user.id
     if not check_approval(user_id):
-        update.message.reply_text("HATHI KA LAUDA GHORE PE OR TU GHOTE KE LODE PE")
+        update.message.reply_text("HATHI KA LAUDA GHORE PE OR TU GHORE KE LODE PE")
         return
 
     try:
